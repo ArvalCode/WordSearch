@@ -1,3 +1,4 @@
+package WordSearch.src;
 import java.util.*;
 
 import java.io.*;
@@ -5,6 +6,8 @@ import java.io.*;
 public class WordSearchRunner {
 
     public static void main(String[] args) throws Exception {
+        long startTime = System.nanoTime();
+
 
         WordSearch ms = new WordSearch(8, "APPLEXYPXLHJKEEDEGGLLXXCGFPDGOGNMYNTAHUUPUQDGBTSBTHIGHMSILKXLTHI");
 
@@ -25,6 +28,10 @@ public class WordSearchRunner {
             }
 
         }
+        long endTime   = System.nanoTime();
+long totalTime = endTime - startTime;
+System.out.println(totalTime);
+
 
     }
 
