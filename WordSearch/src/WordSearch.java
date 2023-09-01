@@ -6,7 +6,7 @@ public class WordSearch {
     private char[][] m;
 
     private String horiString;
-    private String vertString = "";
+    private String vertString;
 
     public WordSearch(int size, String str) {
         m = new char[str.length() / size][size];
